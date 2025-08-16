@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">basics1</string>
+    <string name="txt_title_app">Abduzcan 1.0</string>
+    <string name="txt_name_author">Igutisan</string>
+    <string name="txt_info">La aventura esta por inciar, \npor favor inicia sesion</string>
+    <string name="txt_login">Ingresar</string>
+    <string name="txt_recover_password">Recueperar Contraseña</string>
+    <string name="txt_login_with_google">Ingresar con Google</string>
+    <string name="txt_not_have_account">No tienes cuenta?</string>
+    <string name="txt_register">Registrate</string>
+    <string name="txt_description">Inicie una nueva aventura con \nAbzduzcan y descubre una \nneuva forma de ver el mundo</string>
+    <string name="txt_start">Comienza</string>
+</resources>
