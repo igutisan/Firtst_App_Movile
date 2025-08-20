@@ -4,7 +4,7 @@
     <string name="txt_name_author">Igutisan</string>
     <string name="txt_info">La aventura esta por inciar, \npor favor inicia sesion</string>
     <string name="txt_login">Ingresar</string>
-    <string name="txt_recover_password">Recueperar Contraseña</string>
+    <string name="txt_recover_password">Recuperar Contraseña</string>
     <string name="txt_login_with_google">Ingresar con Google</string>
     <string name="txt_not_have_account">No tienes cuenta?</string>
     <string name="txt_register">Registrate</string>
