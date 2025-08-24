@@ -10,4 +10,15 @@
     <string name="txt_register">Registrate</string>
     <string name="txt_description">Inicie una nueva aventura con \nAbzduzcan y descubre una \nneuva forma de ver el mundo</string>
     <string name="txt_start">Comienza</string>
+    <string name="termsAndConditions">Acepto los Términos y Condiciones</string>
+    <string name="login_redirect_text">Ya tienes cuenta? Inicia Sesion</string>
+    <string name="instruction_create_account">Crea tu cuenta para continuar</string>
+    <string name="hint_names">Nombres</string>
+    <string name="hint_last_names">Apellidos</string>
+    <string name="hint_email">Correo Electrónico</string>
+    <string name="hint_phone">Teléfono</string>
+    <string name="hint_password">Contraseña</string>
+    <string name="hint_repeat_password">Repetir Contraseña</string>
+    <string name="login_question">¿Ya tienes una cuenta? </string>
+    <string name="redirect_to_login">Iniciar Sesión </string>
 </resources>
