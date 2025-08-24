@@ -21,4 +21,11 @@
     <string name="hint_repeat_password">Repetir Contraseña</string>
     <string name="login_question">¿Ya tienes una cuenta? </string>
     <string name="redirect_to_login">Iniciar Sesión </string>
+    <string name="profile_image_description">Imagen de perfil del usuario</string>
+    <string name="profile_full_name_placeholder">Nombres Apellidos</string>
+    <string name="profile_email_placeholder">correo.electronico@ejemplo.com</string>
+    <string name="profile_phone_placeholder">+57 3111111111</string>
+    <string name="action_edit">Editar</string>
+    <string name="instruction_recover_password">Ingresa tu correo electrónico</string>
+    <string name="action_send">Enviar</string>
 </resources>
