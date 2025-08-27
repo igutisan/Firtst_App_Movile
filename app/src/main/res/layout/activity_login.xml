@@ -130,17 +130,17 @@
         android:fontFamily="serif"
         android:text="@string/txt_recover_password"
         android:textAlignment="center"
-        android:textSize="16sp"
+        android:textSize="14sp"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@id/btn_login"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/btn_login" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_google"
         android:layout_width="293dp"
         android:layout_height="53dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="64dp"
         android:backgroundTint="@color/white"
         android:fontFamily="@font/andika_new_basic"
         android:text="@string/txt_login_with_google"
@@ -148,26 +148,26 @@
         android:textSize="16sp"
         android:textStyle="bold"
         app:icon="@drawable/google"
-        app:iconPadding="12dp"
         app:iconGravity="textStart"
+        app:iconPadding="12dp"
         app:iconSize="24dp"
         app:iconTint="@null"
-        app:layout_constraintTop_toBottomOf="@+id/txt_resetpassword"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_resetpassword" />
 
     <TextView
         android:id="@+id/txt_notHaveAccount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="56dp"
         android:fontFamily="serif"
         android:text="@string/txt_not_have_account"
-        app:layout_constraintTop_toBottomOf="@+id/btn_google"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/txt_register2"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="packed"
-        app:layout_constraintHorizontal_bias="0.5"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_google" />
 
     <TextView
         android:id="@+id/txt_register2"
