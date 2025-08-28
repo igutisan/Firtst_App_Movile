@@ -17,8 +17,8 @@ class HomeActivity  : AppCompatActivity() {
             startActivity(intent)
         }
 
-        var txt_register = findViewById<TextView>(R.id.txt_register)
-        txt_register.setOnClickListener {
+        var txtRegister = findViewById<TextView>(R.id.txt_register)
+        txtRegister.setOnClickListener {
             var intent = Intent(this, RegisterActivity::class.java)
             startActivity(intent)
         }
