@@ -11,9 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher3_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Basics1"
-        tools:targetApi="31">
+        >
         <activity
-            android:name=".SplashActivity"
+            android:name=".activity.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,19 +22,19 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".HomeActivity"
+        <activity android:name=".activity.HomeActivity"
             android:exported="false"/>
-        <activity android:name=".MainActivity"
-            android:exported="false"/>
-
-        <activity android:name=".LoginActivity"
+        <activity android:name=".activity.MainActivity"
             android:exported="false"/>
 
-        <activity android:name=".RegisterActivity"
+        <activity android:name=".activity.LoginActivity"
             android:exported="false"/>
-        <activity android:name=".RecoverPasswordActivity"
+
+        <activity android:name=".activity.RegisterActivity"
             android:exported="false"/>
-        <activity android:name=".ProfileActivity"
+        <activity android:name=".activity.RecoverPasswordActivity"
+            android:exported="false"/>
+        <activity android:name=".activity.ProfileActivity"
             android:exported="false"/>
         <meta-data
             android:name="preloaded_fonts"
