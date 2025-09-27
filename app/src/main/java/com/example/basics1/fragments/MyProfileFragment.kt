@@ -46,8 +46,14 @@ class MyProfileFragment : Fragment() {
     }
 
     private fun loadUserData() {
-        TODO("Not yet implemented")
-        // Carga de datos desde el shared preferences
+        val name = sharedPreferences.getString(NAME_KEY, "")
+        val lastName = sharedPreferences.getString(LAST_NAME_KEY, "")
+        val email = sharedPreferences.getString(EMAIL_KEY, "")
+        val phone = sharedPreferences.getString(PHONE_KEY, "")
+
+        tvFullName.text = "$name $lastName"
+        tvEmail.text = email
+        tvPhone.text = phone
     }
 
     private fun setupSharedPreferences() {

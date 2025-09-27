@@ -56,7 +56,13 @@ class LoginActivity  : AppCompatActivity() {
     private fun compareteLogin(etEmail: EditText, etPasswod: EditText){
         val email= etEmail.text.toString().trim()
         val password = etPasswod.text.toString().trim()
-        val sharedPreferences = getSharedPreferences("UserData", MODE_PRIVATE)
+
+        if (email.isEmpty() || password.isEmpty()) {
+            Toast.makeText(this, "Por favor, complete todos los campos", Toast.LENGTH_SHORT).show()
+            return
+        }
+
+        val sharedPreferences = getSharedPreferences("userData", MODE_PRIVATE)
         val savedEmail = sharedPreferences.getString("email", "")
         val savedPassword = sharedPreferences.getString("password", "")
 
