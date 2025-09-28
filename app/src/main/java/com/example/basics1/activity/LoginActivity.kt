@@ -67,9 +67,9 @@ class LoginActivity  : AppCompatActivity() {
         val savedPassword = sharedPreferences.getString("password", "")
 
         if(email == savedEmail && password == savedPassword){
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, ProfileActivity::class.java)
             startActivity(intent)
-            finish()
+            finish() // Cierra LoginActivity para que el usuario no pueda volver con el botón "Atrás"
         }else{
             Toast.makeText(this,"Credenciales incorrectas", Toast.LENGTH_SHORT).show()
         }
