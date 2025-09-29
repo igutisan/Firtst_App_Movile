@@ -67,7 +67,9 @@ class LoginActivity  : AppCompatActivity() {
         val savedPassword = sharedPreferences.getString("password", "")
 
         if(email == savedEmail && password == savedPassword){
-            val intent = Intent(this, ProfileActivity::class.java)
+            // --- CAMBIO IMPORTANTE AQUÍ ---
+            // Ahora iniciamos MainActivity
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
             finish() // Cierra LoginActivity para que el usuario no pueda volver con el botón "Atrás"
         }else{
