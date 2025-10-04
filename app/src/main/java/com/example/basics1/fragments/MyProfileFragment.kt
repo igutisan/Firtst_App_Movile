@@ -74,7 +74,6 @@ class MyProfileFragment : Fragment() {
         tvPhone = view.findViewById(R.id.tv_phone)
         btnEditProfile = view.findViewById(R.id.btn_edit_profile)
 
-        // --- ¡AQUÍ ESTÁ LA INTERACCIÓN QUE FALTABA! ---
         btnEditProfile.setOnClickListener {
             val intent = Intent(requireContext(), EditProfileActivity::class.java)
             startActivity(intent)
