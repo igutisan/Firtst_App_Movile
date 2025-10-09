@@ -27,7 +27,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         val navigationView = findViewById<NavigationView>(R.id.navigation_view)
         val menuButton = findViewById<ImageView>(R.id.menu_button)
 
-        // Configurar el botón de la hamburguesa para abrir/cerrar el menú
         menuButton.setOnClickListener {
             if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
                 drawerLayout.closeDrawer(GravityCompat.START)
@@ -39,7 +38,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         // Establecer el listener para los ítems del menú
         navigationView.setNavigationItemSelectedListener(this)
 
-        // Cargar el fragmento inicial si es la primera vez
+
         if (savedInstanceState == null) {
             replaceFragment(homeFragment)
             navigationView.setCheckedItem(R.id.menu_home)
@@ -51,7 +50,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         when (item.itemId) {
             R.id.menu_home -> replaceFragment(homeFragment)
             R.id.menu_profile -> replaceFragment(myProfileFragment)
-            // Agrega más casos aquí para otros ítems del menú (ej: settings, logout)
         }
         drawerLayout.closeDrawer(GravityCompat.START)
         return true
@@ -63,8 +61,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             .commit()
     }
 
+
     override fun onBackPressed() {
-        // Si el menú está abierto, el botón "atrás" lo cerrará
         if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
             drawerLayout.closeDrawer(GravityCompat.START)
         } else {
